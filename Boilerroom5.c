@@ -34,6 +34,13 @@ int checkInputMeny(int choice)
 void checkQuizeAwnser()
 {
 }
-void quize()
+void quize1()
 {
+    printf("Vem spelade huvudrollen Bilbo i filmserien The Hobbit?\n");
+    printf("\t1: Morgan Freeman \n\t2: Ian McKellen \n\t3:Martin Freeman \n\t4: Graham Mctavish\n");
+    scanf("")
+}
+void quize2()
+{
+
 }
