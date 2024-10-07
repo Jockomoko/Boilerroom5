@@ -22,16 +22,9 @@ int checkInputMeny()
     {
     case 1:
         quize1();
-        break;
-        case 2:
         quize2();
-        break;
-        case 3:
         quize3();
-        break;
-        case 4:
         quize4();
-        quize3();
         break;
     case 0:
         break;
@@ -51,7 +44,10 @@ void checkQuizeAwnser(int amountOfAwnser, int rightAwnser)
         scanf("%i", &choice);
         if (choice > 0 && choice <= amountOfAwnser)
         {
-            printf("You are right\n");
+            if (choice == rightAwnser)
+            {
+                printf("You are right\n");
+            }
         }
         else if (choice == 0)
             ;
@@ -65,25 +61,25 @@ void quize1()
 {
     printf("Vilket sprak skrivs den här koden i?\n");
     printf("\t1: C \n\t2: Java \n\t3: Python \n\t4: Cobolt\n");
-    checkQuizeAwnser(4,1);
+    checkQuizeAwnser(4, 1);
 }
 void quize2()
 {
     printf("Vem är best?\n");
     printf("1. Tony\n");
-    printf("2. Tony\n");
-    printf("3. Tony\n");
+    printf("2. Torsten\n");
+    printf("3. Stina\n");
     checkQuizeAwnser(3, 1);
 }
 void quize3()
 {
     printf("Vem spelade huvudrollen Bilbo i filmserien The Hobbit?\n");
     printf("\t1: Morgan Freeman \n\t2: Ian McKellen \n\t3:Martin Freeman \n\t4: Graham Mctavish\n");
-    checkQuizeAwnser(4,3);
+    checkQuizeAwnser(4, 3);
 }
 void quize4()
 {
     printf("Vad heter den gröna lilla figuren i Star Wars?\n");
     printf("\t1: Obi-Wan \t\n2: Darth Vader \n\t3: Yaba Dahut \n\t4: Yoda\n");
-    checkQuizeAwnser(4,4);
+    checkQuizeAwnser(4, 4);
 }
