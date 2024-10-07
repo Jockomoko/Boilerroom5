@@ -20,7 +20,16 @@ int checkInputMeny(int choice)
     switch (choice)
     {
     case 1:
-        quize();
+        quize1();
+        break;
+        case 2:
+        quize2();
+        break;
+        case 3:
+        quize3();
+        break;
+        case 4:
+        quize4();
         break;
     case 0:
         return 0;
@@ -31,16 +40,31 @@ int checkInputMeny(int choice)
         break;
     }
 }
-void checkQuizeAwnser()
+void checkQuizeAwnser(int amountOfAwnser, int rightAwnser)
 {
 }
 void quize1()
 {
-    printf("Vem spelade huvudrollen Bilbo i filmserien The Hobbit?\n");
-    printf("\t1: Morgan Freeman \n\t2: Ian McKellen \n\t3:Martin Freeman \n\t4: Graham Mctavish\n");
-    scanf("")
+    printf("Vilket sprak skrivs den här koden i?\n");
+    printf("\t1: C \n\t2: Java \n\t3: Python \n\t4: Cobolt\n");
+    checkQuizeAwnser(4,1);
 }
 void quize2()
 {
-
+    printf("Vem är best?");
+    printf("1. Tony");
+    printf("2. Tony");
+    printf("3. Tony");
+}
+void quize3()
+{
+    printf("Vem spelade huvudrollen Bilbo i filmserien The Hobbit?\n");
+    printf("\t1: Morgan Freeman \n\t2: Ian McKellen \n\t3:Martin Freeman \n\t4: Graham Mctavish\n");
+    checkQuizeAwnser(4,3);
+}
+void quize4()
+{
+    printf("Vad heter den gröna lilla figuren i Star Wars?\n");
+    printf("\t1: Obi-Wan \t\n2: Darth Vader \n\t3: Yaba Dahut \n\t4: Yoda\n");
+    checkQuizeAwnser(4,4);
 }
