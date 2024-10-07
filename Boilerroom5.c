@@ -31,9 +31,16 @@ int checkInputMeny(int choice)
         break;
     }
 }
-void checkQuizeAwnser()
+void checkQuizeAwnser(int amountOfAwnser, int rightAwnser)
 {
 }
-void quize()
+void quize3()
+{
+    printf("Vem är best?");
+    printf("1. Tony");
+    printf("2. Tony");
+    printf("3. Tony");
+}
+void quize4()
 {
 }
